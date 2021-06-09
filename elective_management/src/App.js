@@ -112,8 +112,8 @@ export default class Login extends Component {
                 </div>
 
                 
-
-                <button type="submit" id="Button"class="btn btn-info btn-lg btn-block" value="Sign in">Sign In <BoxArrowInRight color="white" class="hover:bg-gray-100" size={30}></BoxArrowInRight>
+                
+                <button type="submit" id="Button"className="btn btn-info btn-lg btn-block" value="Sign in">Sign In<BoxArrowInRight color="white" class="hover:bg-gray-100" size={30}></BoxArrowInRight>
 </button>
               
                   
