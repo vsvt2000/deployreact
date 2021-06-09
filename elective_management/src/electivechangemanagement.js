@@ -6,7 +6,7 @@ import axios from 'axios';
 import {PersonCheck} from 'react-bootstrap-icons';
 
 
-export default class changemanagement extends Component {
+export default class Changemanagement extends Component {
     clickBtn1 = (event) => {
         event.preventDefault();
         this.props.history.push('/admindashboard');
@@ -93,7 +93,7 @@ export default class changemanagement extends Component {
                         
                      <h3 className="text-center font-weight-bold font-size:1.5em" class="heading1">Manage Elective Change</h3>
                         <div className="form-group">
-                            <label>Department</label>
+                            <label id="label1">Department</label>
                             <br/>
                             <select required name="department" id="select1">
                                 <option value="">
@@ -105,7 +105,7 @@ export default class changemanagement extends Component {
                             </select>
                             <br/>
                             <br/>
-                            <label>Year</label>
+                            <label id="label2">Year</label>
                             <br/>
                             
                             <select required name="year" id="select2">
@@ -119,7 +119,7 @@ export default class changemanagement extends Component {
                                
                             </select>
                         </div>
-                        <button  style={{color:'white'}} className="btn btn-info btn-lg btn-block" type="submit" onClick={this.clickbtn}><PersonCheck color="white" class="hover:bg-gray-100" size={30}></PersonCheck>&nbsp; &nbsp;Allocate
+                        <button id="subbtn" style={{color:'white'}} className="btn btn-info btn-lg btn-block" type="submit" onClick={this.clickbtn}><PersonCheck color="white" class="hover:bg-gray-100" size={30}></PersonCheck>&nbsp; &nbsp;Allocate
                         </button>
                         
                         <div id="tab">

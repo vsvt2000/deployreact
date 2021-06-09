@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import { ArrowLeftCircleFill } from 'react-bootstrap-icons';
 import {PDFExport} from '@progress/kendo-react-pdf';
 import {Download} from 'react-bootstrap-icons';
-export default class aviewstudentelective extends Component {
+export default class Aviewstudentelective extends Component {
   
    clickBtn1 = (event) => {
     event.preventDefault();
@@ -83,15 +83,15 @@ export default class aviewstudentelective extends Component {
           
           
           <div class="out" style={{height:"auto", width:"750px"}} >
-          <button type="Submit" onClick={this.clickBtn1} className="btn"><ArrowLeftCircleFill color="greenyellow" class="hover:bg-gray-100" size={40}></ArrowLeftCircleFill></button>
+          <button type="Submit" id="back1" onClick={this.clickBtn1} className="btn"><ArrowLeftCircleFill color="greenyellow" class="hover:bg-gray-100" size={40}></ArrowLeftCircleFill></button>
           <img src={logo} className="rounded mx-auto d-block" style={{height:'25%',width:'25%'}}/>
               <br/>
               <br/>
-              <h4 className="text-center font-weight-bold font-size:1.5em" class="heading1">View Final List</h4>
+              <h4 id="title1" className="text-center font-weight-bold font-size:1.5em" class="heading1">View Final List</h4>
           <br></br>
           <div className="form-group" style={{display:"flex"}}>
             <div style={{display:"block"}}>
-                          <label>Department</label>
+                          <label id="label1">Department</label>
                           <br/>
                           <select required defaultValue={'DEFAULT'} name="text" id="select1" onChange={this.handleChange}>
                               <option value="DEFAULT" disabled>Choose department</option>
@@ -103,7 +103,7 @@ export default class aviewstudentelective extends Component {
                           <br/>
                           </div>
                           <div style={{display:"block",paddingLeft:"10px"}}>
-                          <label>Year</label>
+                          <label id="label2">Year</label>
                           <br/>
                           
                           <select defaultValue={'DEFAULT'} name="text" id="select2" onChange={this.handleChange}>
@@ -130,7 +130,7 @@ export default class aviewstudentelective extends Component {
                       
                       <div style={{display:"block",paddingLeft:"5%",paddingTop:"2%"}}>
                       
-                      <button style={{color:'white'}}  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
+                      <button style={{color:'white'}} id="subbtn"  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
                       </button>
                       
                       </div>

@@ -3,7 +3,7 @@ import logo from './index.png';
 import axios from 'axios';
 import ReactDOM from 'react-dom';
 import { ArrowLeftCircleFill } from 'react-bootstrap-icons';
-export default class errorpage extends Component {
+export default class Errorpage extends Component {
     clickBtn1 = (event) => {
         event.preventDefault();
         this.props.history.push('/loginform');
@@ -55,11 +55,11 @@ return(
 <body style={{fontFamily:"Raleway,sans-serif"
         
     }}>
-<button type="" onClick={this.clickBtn1} className="btn"><ArrowLeftCircleFill color="greenyellow" class="hover:bg-gray-100" size={40}></ArrowLeftCircleFill></button>
+<button id="button1"type="" onClick={this.clickBtn1} className="btn"><ArrowLeftCircleFill color="greenyellow" class="hover:bg-gray-100" size={40}></ArrowLeftCircleFill></button>
 
     <div class="cover">
-    <img src={logo} className="rounded mx-auto d-block" id="img1" style={{height:'10%',width:'10%'}}/>
-    <h1 className="text-center">Resource not found <small>404</small></h1>
+    <img id="img1" src={logo} className="rounded mx-auto d-block" id="img1" style={{height:'10%',width:'10%'}}/>
+    <h1 className="text-center">Resource not found 404</h1>
     <h2 className="text-center">The requested file could not be found but will be coming soon in: </h2>
     <p className="text-center" id="demo"></p>
     <footer>

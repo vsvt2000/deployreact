@@ -102,7 +102,7 @@ export default class Feedbackform extends Component {
                 </div>
 
 
-                <button type="submit" style={{color: 'white'}}  className="btn btn-info btn-lg btn-block">Submit</button>
+                <button type="submit" id="sub1" style={{color: 'white'}}  className="btn btn-info btn-lg btn-block">Submit</button>
               
                   
             </form>

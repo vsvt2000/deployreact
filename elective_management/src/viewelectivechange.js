@@ -3,7 +3,7 @@ import logo from './index.png';
 import axios from 'axios';
 import ReactDOM from 'react-dom';
 import { ArrowLeftCircleFill } from 'react-bootstrap-icons';
-export default class viewelectivechange extends Component {
+export default class Viewelectivechange extends Component {
    clickBtn1 = (event) => {
     event.preventDefault();
     this.props.history.push('/admindashboard');
@@ -86,7 +86,7 @@ export default class viewelectivechange extends Component {
           <br></br>
           <div className="form-group" style={{display:"flex"}}>
             <div style={{display:"block"}}>
-                          <label>Department</label>
+                          <label id="label1">Department</label>
                           <br/>
                           <select required defaultValue={'DEFAULT'} name="text" id="select1" onChange={this.handleChange}>
                               <option value="DEFAULT" disabled>Choose department</option>
@@ -98,7 +98,7 @@ export default class viewelectivechange extends Component {
                           <br/>
                           </div>
                           <div style={{display:"block",paddingLeft:"10px"}}>
-                          <label>Year</label>
+                          <label id="label2">Year</label>
                           <br/>
                           
                           <select defaultValue={'DEFAULT'} name="text" id="select2" onChange={this.handleChange}>
@@ -114,7 +114,7 @@ export default class viewelectivechange extends Component {
                       
                       <div style={{display:"block",paddingLeft:"30%",paddingTop:"2%"}}>
                       
-                      <button style={{color:'white'}}  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
+                      <button style={{color:'white'}} id="subbtn" className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
                       </button>
                       </div>
                       </div>

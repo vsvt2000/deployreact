@@ -92,15 +92,15 @@ export default class ChangeForm extends Component {
 
                     <form onSubmit={(e) => submit_signup(e)}>
 
-                        <h3 className="text-center font-weight-bold font-size:1.5em" class="heading1">Elective Change Form</h3>
+                        <h3 id="head1" className="text-center font-weight-bold font-size:1.5em" class="heading1">Elective Change Form</h3>
 
                         <div className="form-group">
-                            <label>Desired Elective Name</label>
+                            <label id="label1">Desired Elective Name</label>
                             <div id="data1"></div>
                         </div>
 
                         <div className="form-group">
-                            <label>Desired Elective Course Code</label>
+                            <label id="label2">Desired Elective Course Code</label>
                             <div id="data2"></div>
                         </div>
 

@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import { ArrowLeftCircleFill } from 'react-bootstrap-icons';
 import {PDFExport} from '@progress/kendo-react-pdf';
 import {Download} from 'react-bootstrap-icons';
-export default class fviewstudentelective extends Component {
+export default class Fviewstudentelective extends Component {
   
    clickBtn1 = (event) => {
     event.preventDefault();
@@ -92,7 +92,7 @@ export default class fviewstudentelective extends Component {
           <div className="form-group" style={{display:"flex"}}>
             
             <div style={{display:"block"}}>
-                          <label>Department</label>
+                          <label id="label1">Department</label>
                           <br/>
                           <select required defaultValue={'DEFAULT'} name="text" id="select1" onChange={this.handleChange}>
                               <option value="DEFAULT" disabled>Choose department</option>
@@ -104,7 +104,7 @@ export default class fviewstudentelective extends Component {
                           <br/>
                           </div>
                           <div style={{display:"block",paddingLeft:"10px"}}>
-                          <label>Year</label>
+                          <label id="label2">Year</label>
                           <br/>
                           
                           <select defaultValue={'DEFAULT'} name="text" id="select2" onChange={this.handleChange}>
@@ -131,7 +131,7 @@ export default class fviewstudentelective extends Component {
                       
                       <div style={{display:"block",paddingLeft:"5%",paddingTop:"2%"}}>
                       
-                      <button style={{color:'white'}} className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
+                      <button style={{color:'white'}} id="subbtn" className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
                       </button>
                       
                       </div>

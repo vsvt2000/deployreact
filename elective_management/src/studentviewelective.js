@@ -3,7 +3,7 @@ import logo from './index.png';
 import axios from 'axios';
 import ReactDOM from 'react-dom';
 import { ArrowLeftCircleFill } from 'react-bootstrap-icons';
-export default class viewstudentelective extends Component {
+export default class Viewstudentelective extends Component {
    clickBtn1 = (event) => {
     event.preventDefault();
     this.props.history.push('/loginform');
@@ -59,8 +59,8 @@ export default class viewstudentelective extends Component {
             
             <img class="img12"src="https://image3.mouthshut.com/images/Restaurant/Photo/-73020_62102.jpg"></img>
               <div className="out" style={{height:"auto",width:"750px"}}>
-              <button type="" onClick={this.clickBtn1} className="btn"><ArrowLeftCircleFill color="greenyellow" class="hover:bg-gray-100" size={40}></ArrowLeftCircleFill></button>
-                <img src={logo} className="rounded mx-auto d-block" style={{height:'25%',width:'25%'}}/>
+              <button type="" id="button1" onClick={this.clickBtn1} className="btn"><ArrowLeftCircleFill color="greenyellow" class="hover:bg-gray-100" size={40}></ArrowLeftCircleFill></button>
+                <img src={logo} id="img1" className="rounded mx-auto d-block" style={{height:'25%',width:'25%'}}/>
 
                 <br/>
                 <br/>
@@ -71,7 +71,7 @@ export default class viewstudentelective extends Component {
             <div id="data"></div>
             <div class="row">
               <div class="col-md-9 col-md-offset-3">
-              <a  style={{paddingLeft:"280px"}} href="https://aumscb.amrita.edu/cas/login?service=https%3A%2F%2Faumscb.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp" target="blank"><h4 style={{paddingLeft:"230px"}}>Click Here to Register</h4></a>
+              <a id="link1" style={{paddingLeft:"280px"}} href="https://aumscb.amrita.edu/cas/login?service=https%3A%2F%2Faumscb.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp" target="blank"><h4 style={{paddingLeft:"230px"}}>Click Here to Register</h4></a>
 
               </div>
             </div>

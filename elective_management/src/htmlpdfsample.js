@@ -19,7 +19,7 @@ const slideImages = [
   ];
   
 
-export default class printpage extends React.Component {
+export default class Aboutus extends React.Component {
     pdfExportComponent;
     constructor(){
         super()
@@ -30,7 +30,7 @@ export default class printpage extends React.Component {
             <div>
                 <div className="outabout">
                     <h1 className="text-center">About Us</h1>
-                    <div className="slide-container">
+                    <div id="slideshow" className="slide-container">
                         <Slide easing="ease">
                             <div className="each-slide">
                                 <div
@@ -55,7 +55,7 @@ export default class printpage extends React.Component {
                             </div>
                         </Slide>
                     </div>
-                    <p>
+                    <p id="descr">
                         <br></br>
                         This Elective Management system aims to bring about an easier way for the teachers and their 
                         departments to put up their electives and for students to choose them by viewing the available electives

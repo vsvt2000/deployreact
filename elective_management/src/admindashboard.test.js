@@ -11,7 +11,7 @@ import AD from './admindashboard';
 
 
             //Button should have matching text
-            expect(JSON.parse(JSON.stringify(wrapper.find('button#button1').text()))).toMatch("    View applied students list ");
+            expect(JSON.parse(JSON.stringify(wrapper.find('button#button1').text()))).toMatch("\u00a0 \u00a0 View applied students list ");
         });
 
         it('should have a btn component', ()=> {
@@ -20,7 +20,7 @@ import AD from './admindashboard';
 
 
             //Button should have matching text
-            expect(JSON.parse(JSON.stringify(wrapper.find('button#button2').text()))).toMatch("     View elective change students");
+            expect(JSON.parse(JSON.stringify(wrapper.find('button#button2').text()))).toMatch("\u00a0 \u00a0 View elective change students");
         });
 
         it('should have a btn component', ()=> {
@@ -30,7 +30,7 @@ import AD from './admindashboard';
 
 
             //Button should have matching text
-            expect(JSON.parse(JSON.stringify(wrapper.find('button#button3').text()))).toMatch("     Send Notifications");
+            expect(JSON.parse(JSON.stringify(wrapper.find('button#button3').text()))).toMatch("\u00a0 \u00a0 Send Notifications");
         });
 
         it('should have a btn component', ()=> {
@@ -40,7 +40,7 @@ import AD from './admindashboard';
 
 
             //Button should have matching text
-            expect(JSON.parse(JSON.stringify(wrapper.find('button#button4').text()))).toEqual("     Send Notifications");
+            expect(JSON.parse(JSON.stringify(wrapper.find('button#button4').text()))).toMatch("\u00a0 \u00a0 Manage Elective Application");
         });
 
         it('should have a btn component', ()=> {
@@ -50,7 +50,7 @@ import AD from './admindashboard';
 
 
             //Button should have matching text
-            expect(JSON.parse(JSON.stringify(wrapper.find('button#button5').text()))).toEqual("     Send Notifications");
+            expect(JSON.parse(JSON.stringify(wrapper.find('button#Button6').text()))).toMatch("\u00a0 \u00a0 View final student list");
         });
 
         it('should have a btn component', ()=> {
@@ -60,7 +60,7 @@ import AD from './admindashboard';
 
 
             //Button should have matching text
-            expect(JSON.parse(JSON.stringify(wrapper.find('button#button6').text()))).toEqual("     Send Notifications");
+            expect(JSON.parse(JSON.stringify(wrapper.find('button#button5').text()))).toMatch("\u00a0 \u00a0 Manage Elective Change Application");
         });
 
 
