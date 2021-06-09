@@ -116,7 +116,7 @@ export default class aviewstudentelective extends Component {
                           </select>
                           </div>
                           <div style={{display:"block",paddingLeft:"10%",paddingTop:"2%"}}>
-                      <button  className="btn btn-info btn-lg btn-block k-button" id="printbtn" style={{display:"none"}}
+                      <button className="btn btn-info btn-lg btn-block k-button" id="printbtn" style={{display:"none",color:'white'}}
                         
                         onClick={() => {
                         this
@@ -130,7 +130,7 @@ export default class aviewstudentelective extends Component {
                       
                       <div style={{display:"block",paddingLeft:"5%",paddingTop:"2%"}}>
                       
-                      <button  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
+                      <button style={{color:'white'}}  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
                       </button>
                       
                       </div>

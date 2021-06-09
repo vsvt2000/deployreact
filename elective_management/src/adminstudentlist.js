@@ -94,7 +94,7 @@ export default class adminstudentlist extends Component {
                         
                         <div style={{display:"block",paddingLeft:"30%",paddingTop:"2%"}}>
                         
-                        <button  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
+                        <button style={{color:'white'}}  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
                         </button>
                         </div>
                         </div>

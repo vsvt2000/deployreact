@@ -90,6 +90,7 @@ export default class fviewstudentelective extends Component {
               <h4 className="text-center font-weight-bold font-size:1.5em" class="heading1">View Final List</h4>
           <br></br>
           <div className="form-group" style={{display:"flex"}}>
+            
             <div style={{display:"block"}}>
                           <label>Department</label>
                           <br/>
@@ -130,7 +131,7 @@ export default class fviewstudentelective extends Component {
                       
                       <div style={{display:"block",paddingLeft:"5%",paddingTop:"2%"}}>
                       
-                      <button  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
+                      <button style={{color:'white'}} className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
                       </button>
                       
                       </div>

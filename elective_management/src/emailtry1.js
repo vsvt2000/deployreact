@@ -127,7 +127,7 @@ export default class sendemail extends Component {
 
                         </div>
                         <br></br>
-                        <button
+                        <button  style={{color:'white'}}
                             type="submit"
                             id="button2"
                             onClick={this.clickBtn}

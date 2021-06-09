@@ -119,7 +119,7 @@ export default class changemanagement extends Component {
                                
                             </select>
                         </div>
-                        <button  className="btn btn-info btn-lg btn-block" type="submit" onClick={this.clickbtn}><PersonCheck color="white" class="hover:bg-gray-100" size={30}></PersonCheck>&nbsp; &nbsp;Allocate
+                        <button  style={{color:'white'}} className="btn btn-info btn-lg btn-block" type="submit" onClick={this.clickbtn}><PersonCheck color="white" class="hover:bg-gray-100" size={30}></PersonCheck>&nbsp; &nbsp;Allocate
                         </button>
                         
                         <div id="tab">
