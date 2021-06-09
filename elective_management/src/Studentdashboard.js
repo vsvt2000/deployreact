@@ -85,7 +85,7 @@ export default class LoginForm extends Component {
     }
     clickBtn0 = (event) => {
         event.preventDefault();
-        window.open('http://localhost:3000/printpage','_blank')
+        window.open('/printpage','_blank')
     }
 
     

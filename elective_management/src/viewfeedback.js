@@ -136,7 +136,7 @@ export default class viewfeedback extends Component {
                     paperSize="A4"
                     margin="0.5cm"
                     ref={(component) => this.pdfExportComponent = component}>
-                    </PDFExport>
+                    
                     <div id="tab">
                         <div id="tab10"></div>
                         <div id="tab11"></div>
@@ -144,7 +144,7 @@ export default class viewfeedback extends Component {
                         <div id="tab13"></div>
                         <div id="tab1"></div>
                     </div>
-
+                    </PDFExport>
                     <button  id = "printbutton" className="btn btn-info btn-lg btn-block k-button"
                         
                         onClick={() => {
