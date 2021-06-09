@@ -29,10 +29,7 @@ export default class Login extends Component {
         this.setState({ [name]: event.target.value });
       };
     
-  clickBtn = (event) => {
-    event.preventDefault();
-    
-  };
+  
 
   handlesubmit_signup = (e) =>{
     e.preventDefault();
