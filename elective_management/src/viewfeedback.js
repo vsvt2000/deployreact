@@ -128,7 +128,7 @@ export default class viewfeedback extends Component {
                             <label>Elective Name</label>
                         </div>
                         <div class="form-group" id="data"></div>
-                        <button class="btn btn-info btn-lg btn-block k-button" type="submit" onClick={this.clickbtn}>Get report</button>
+                        <button style={{color: 'white'}}  class="btn btn-info btn-lg btn-block k-button" type="submit" onClick={this.clickbtn}>Get report</button>
                         <br></br>
                         <br></br>
                     </form>
@@ -145,7 +145,7 @@ export default class viewfeedback extends Component {
                         <div id="tab1"></div>
                     </div>
                     </PDFExport>
-                    <button  id = "printbutton" className="btn btn-info btn-lg btn-block k-button"
+                    <button style={{color: 'white'}}  id = "printbutton" className="btn btn-info btn-lg btn-block k-button"
                         
                         onClick={() => {
                         this

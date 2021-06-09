@@ -189,7 +189,7 @@ export default class App22 extends Component {
 </div>
 
 
-<button type="submit" id="button1" className="btn btn-info btn-lg btn-block">Submit</button>
+<button type="submit" style={{color: 'white'}} id="button1" className="btn btn-info btn-lg btn-block">Submit</button>
 
 
 </div>

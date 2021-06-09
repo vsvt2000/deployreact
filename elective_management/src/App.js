@@ -108,11 +108,11 @@ export default class Login extends Component {
                     <input type="password" name="password" id="pwd" onChange={this.handleChange("password")}className="form-control" placeholder="Enter password" value={this.state.password}/>
                 </div>
 
+                <div className="form-group">
                 
-                
-                <button type="submit" id="Button"className="btn btn-info btn-lg btn-block" value="Sign in">Sign In<BoxArrowInRight color="white" class="hover:bg-gray-100" size={30}></BoxArrowInRight>
+                <button type="submit" style={{color: 'white'}} id="Button"className="btn btn-info btn-lg btn-block" value="Sign in">Sign In<BoxArrowInRight color="white" class="hover:bg-gray-100" size={30}></BoxArrowInRight>
 </button>
-              
+              </div>
                   
                   
               

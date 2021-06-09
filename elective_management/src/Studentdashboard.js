@@ -30,7 +30,7 @@ export default class LoginForm extends Component {
     element=<h5>Welcome<br></br> {JSON.parse(JSON.stringify(details))}!</h5>
     ReactDOM.render(element, document.getElementById('data1'));
     document.title=x;
-    var element1 = <button type="submit"  className="btn btn-info btn-lg btn-block" id ="Button5"  onClick={this.clickBtn5}><CardList color="white" class="hover:bg-gray-100" size={30}></CardList>                &nbsp; &nbsp; Tentative List</button>
+    var element1 = <button type="submit" style={{color: 'white'}}  className="btn btn-info btn-lg btn-block" id ="Button5"  onClick={this.clickBtn5}><CardList color="white" class="hover:bg-gray-100" size={30}></CardList>                &nbsp; &nbsp; Tentative List</button>
     let n1 = new Date()
             if((n1.getMonth()>=4) && (n1.getDate()>10 || (n1.getDate()==10 && n1.getHours()>=15))){
                 element1=<button type="submit"  className="btn btn-info btn-lg btn-block" id ="Button5"  onClick={this.clickBtn5}><CardList color="white" class="hover:bg-gray-100" size={30}></CardList>                &nbsp; &nbsp; Tentative List</button>
@@ -138,13 +138,13 @@ export default class LoginForm extends Component {
 
     <form>
         
-    <button type="submit"  className="btn btn-info btn-lg btn-block " id ="Button1"  onClick={this.clickBtn1}><PencilSquare color="white" class="hover:bg-gray-100" size={30}></PencilSquare>&nbsp; &nbsp; Apply</button>
+    <button type="submit" style={{color: 'white'}}  className="btn btn-info btn-lg btn-block " id ="Button1"  onClick={this.clickBtn1}><PencilSquare color="white" class="hover:bg-gray-100" size={30}></PencilSquare>&nbsp; &nbsp; Apply</button>
     <br></br>
-    <button type="submit"  className="btn btn-info btn-lg btn-block" id ="Button2" onClick={this.clickBtn2}><ArrowRepeat color="white" class="hover:bg-gray-100" size={30}></ArrowRepeat>&nbsp; &nbsp; Change</button>
+    <button type="submit" style={{color: 'white'}} className="btn btn-info btn-lg btn-block" id ="Button2" onClick={this.clickBtn2}><ArrowRepeat color="white" class="hover:bg-gray-100" size={30}></ArrowRepeat>&nbsp; &nbsp; Change</button>
         <br></br>      
-    <button type="submit"  className="btn btn-info btn-lg btn-block" id ="Button3" onClick={this.clickBtn3}><Star color="white" class="hover:bg-gray-100" size={30}></Star>&nbsp; &nbsp; Feedback</button>
+    <button type="submit" style={{color: 'white'}} className="btn btn-info btn-lg btn-block" id ="Button3" onClick={this.clickBtn3}><Star color="white" class="hover:bg-gray-100" size={30}></Star>&nbsp; &nbsp; Feedback</button>
     <br></br>      
-    <div id="data"></div>
+    <div id="data" ></div>
     
         
                   

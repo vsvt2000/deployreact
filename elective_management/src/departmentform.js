@@ -103,7 +103,7 @@ function App11(props) {
         {inputList.length - 1 === i && <button id = "submit1" className="btn btn-success ml-1 flex " onClick={handleAddClick}>Add</button>}
       </div>
       <br/>
-                <button type="submit" id = "submit2" className="btn btn-info mr-0 ml-0 pl-0 pr-0 btn-block">Submit</button>
+                <button style={{color: 'white'}}  type="submit" id = "submit2" className="btn btn-info mr-0 ml-0 pl-0 pr-0 btn-block">Submit</button>
             </div>
             
             

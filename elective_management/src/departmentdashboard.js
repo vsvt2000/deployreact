@@ -77,11 +77,11 @@ export default class TD  extends Component{
    <div >
     <form>
         
-    <button type="submit"  className="btn btn-info btn-lg btn-block " id="Button1" onClick={this.clickBtn1}><PencilSquare color="white" class="hover:bg-gray-100" size={30}></PencilSquare>&nbsp; &nbsp; Provide list</button>
+    <button type="submit" style={{color: 'white'}}  className="btn btn-info btn-lg btn-block " id="Button1" onClick={this.clickBtn1}><PencilSquare color="white" class="hover:bg-gray-100" size={30}></PencilSquare>&nbsp; &nbsp; Provide list</button>
     <br></br>
-    <button type="submit"  className="btn btn-info btn-lg btn-block" id="Button2" onClick={this.clickBtn3}><CardList color="white" class="hover:bg-gray-100" size={30}></CardList>&nbsp; &nbsp; View final student list</button>
+    <button type="submit" style={{color: 'white'}}  className="btn btn-info btn-lg btn-block" id="Button2" onClick={this.clickBtn3}><CardList color="white" class="hover:bg-gray-100" size={30}></CardList>&nbsp; &nbsp; View final student list</button>
     <br></br>      
-    <button type="submit"  className="btn btn-info btn-lg btn-block" id="Button3" onClick={this.clickBtn2} ><ClipboardData color="white" class="hover:bg-gray-100" size={30}></ClipboardData>&nbsp; &nbsp; Feedback Report</button>
+    <button type="submit" style={{color: 'white'}}  className="btn btn-info btn-lg btn-block" id="Button3" onClick={this.clickBtn2} ><ClipboardData color="white" class="hover:bg-gray-100" size={30}></ClipboardData>&nbsp; &nbsp; Feedback Report</button>
                  
                   
     

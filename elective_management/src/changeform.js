@@ -106,7 +106,7 @@ export default class ChangeForm extends Component {
 
                         <button
                             type="submit"
-                            id="button2"
+                            id="button2" style={{color: 'white'}}
                             onClick={this.clickBtn}
                             className="btn btn-info btn-lg btn-block">Submit</button>
 
