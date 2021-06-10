@@ -29,7 +29,7 @@ export default class Fviewstudentelective extends Component {
       {details.map((item) => (<div>
       <h3>{JSON.parse(JSON.stringify(item.elective))} - {JSON.parse(JSON.stringify(item.mentor))}</h3>
       <table class="table table-bordered ">
-        <tr class="table-primary">
+        <tr class="table-primary"style={{backgroundColor:"#66e0ff"}}>
         <th>Name</th>
         <th>Roll Number</th>
         <th>Elective Name</th>
@@ -91,7 +91,7 @@ export default class Fviewstudentelective extends Component {
           <br></br>
           <div className="form-group" style={{display:"flex"}}>
             
-            <div style={{display:"block"}}>
+            <div style={{display:"block",paddingTop:"2%"}}>
                           <label id="label1">Department</label>
                           <br/>
                           <select required defaultValue={'DEFAULT'} name="text" id="select1" onChange={this.handleChange}>
@@ -103,7 +103,7 @@ export default class Fviewstudentelective extends Component {
                           <br/>
                           <br/>
                           </div>
-                          <div style={{display:"block",paddingLeft:"10px"}}>
+                          <div style={{display:"block",paddingLeft:"10px",paddingTop:"2%"}}>
                           <label id="label2">Year</label>
                           <br/>
                           
@@ -116,8 +116,8 @@ export default class Fviewstudentelective extends Component {
                              
                           </select>
                           </div>
-                          <div style={{display:"block",paddingLeft:"10%",paddingTop:"2%"}}>
-                      <button  className="btn btn-info btn-lg btn-block k-button" id="printbtn" style={{display:"none"}}
+                          <div style={{display:"block",paddingLeft:"10%",paddingTop:"1%"}}>
+                      <button  className="btn btn-info btn-lg btn-block k-button" id="printbtn" style={{display:"none",color:"white"}}
                         
                         onClick={() => {
                         this
@@ -129,18 +129,20 @@ export default class Fviewstudentelective extends Component {
                     </button>
                     </div>
                       
-                      <div style={{display:"block",paddingLeft:"5%",paddingTop:"2%"}}>
+                      <div style={{display:"block",paddingLeft:"5%",paddingTop:"1%"}}>
                       
                       <button style={{color:'white'}} id="subbtn" className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
                       </button>
                       
                       </div>
                       </div>
+                      <br></br>
                       <PDFExport
                     paperSize="A4"
                     margin="0.5cm"
                     ref={(component) => this.pdfExportComponent = component}>
           <div id="datap"></div>
+
           </PDFExport>
           <div id="data"></div>
           </div>

@@ -19,7 +19,7 @@ export default class Adminstudentlist extends Component {
         var element;
         if (details.length>0){
         element=<table class="table table-bordered ">
-        <tr class="table-primary">
+        <tr class="table-primary" style={{backgroundColor:"#66e0ff"}}>
         <th>Name</th>
         <th>Roll.no</th>
         <th>section</th>
@@ -65,7 +65,7 @@ export default class Adminstudentlist extends Component {
                 <h4 className="text-center font-weight-bold font-size:1.5em" class="heading1">View Student Applications</h4>
             <br></br>
             <div className="form-group" style={{display:"flex"}}>
-              <div style={{display:"block"}}>
+              <div style={{display:"block",paddingTop:"2%"}}>
                             <label id="label1">Department</label>
                             <br/>
                             <select required defaultValue={'DEFAULT'} name="text" id="select1" onChange={this.handleChange}>
@@ -77,7 +77,7 @@ export default class Adminstudentlist extends Component {
                             <br/>
                             <br/>
                             </div>
-                            <div style={{display:"block",paddingLeft:"10px"}}>
+                            <div style={{display:"block",paddingLeft:"10px",paddingTop:"2%"}}>
                             <label id="label2">Year</label>
                             <br/>
                             
@@ -92,12 +92,13 @@ export default class Adminstudentlist extends Component {
                             </div>
                         
                         
-                        <div style={{display:"block",paddingLeft:"30%",paddingTop:"2%"}}>
+                        <div style={{display:"block",paddingLeft:"20%",paddingTop:"1%"}}>
                         
                         <button style={{color:'white'}} id="subbtn" className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
                         </button>
                         </div>
                         </div>
+                        <br></br>
             <div id="data"></div>
             </div>
             </div>

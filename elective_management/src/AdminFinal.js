@@ -29,7 +29,7 @@ export default class Aviewstudentelective extends Component {
       {details.map((item) => (<div>
       <h3>{JSON.parse(JSON.stringify(item.elective))} - {JSON.parse(JSON.stringify(item.mentor))}</h3>
       <table class="table table-bordered ">
-        <tr class="table-primary">
+        <tr class="table-primary"style={{backgroundColor:"#66e0ff"}}>
         <th>Name</th>
         <th>Roll Number</th>
         <th>Elective Name</th>
@@ -90,7 +90,7 @@ export default class Aviewstudentelective extends Component {
               <h4 id="title1" className="text-center font-weight-bold font-size:1.5em" class="heading1">View Final List</h4>
           <br></br>
           <div className="form-group" style={{display:"flex"}}>
-            <div style={{display:"block"}}>
+            <div style={{display:"block",paddingTop:"2%"}}>
                           <label id="label1">Department</label>
                           <br/>
                           <select required defaultValue={'DEFAULT'} name="text" id="select1" onChange={this.handleChange}>
@@ -102,7 +102,7 @@ export default class Aviewstudentelective extends Component {
                           <br/>
                           <br/>
                           </div>
-                          <div style={{display:"block",paddingLeft:"10px"}}>
+                          <div style={{display:"block",paddingLeft:"10px",paddingTop:"2%"}}>
                           <label id="label2">Year</label>
                           <br/>
                           
@@ -115,7 +115,8 @@ export default class Aviewstudentelective extends Component {
                              
                           </select>
                           </div>
-                          <div style={{display:"block",paddingLeft:"10%",paddingTop:"2%"}}>
+                          <div style={{display:"block",paddingLeft:"10%"}}>
+                          
                       <button className="btn btn-info btn-lg btn-block k-button" id="printbtn" style={{display:"none",color:'white'}}
                         
                         onClick={() => {
@@ -126,11 +127,12 @@ export default class Aviewstudentelective extends Component {
                          &nbsp;
                         Export PDF
                     </button>
+                    
                     </div>
                       
-                      <div style={{display:"block",paddingLeft:"5%",paddingTop:"2%"}}>
+                      <div style={{display:"block",paddingLeft:"5%"}}>
                       
-                      <button style={{color:'white'}} id="subbtn"  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
+                      <button style={{color:'white',marginBottom:"10px"}} id="subbtn"  className="btn btn-info btn-lg " type="submit" onClick={this.clickbtn}>View List
                       </button>
                       
                       </div>
